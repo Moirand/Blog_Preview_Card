@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Figtree-Medium';
+    src: url(assets/fonts/static/Figtree-Medium.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Figtree-ExtraBold';
+    src: url(assets/fonts/static/Figtree-ExtraBold.ttf) format('truetype');
+    font-weight: bold;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: 'Figtree-ExtraBold';
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+h2 {
+    font-size: 14px;
+    font-family: 'Figtree-ExtraBold';
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+h3 {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    font-weight: normal
+}
+
+body {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray500: hsl(0, 0%, 42%);
+    --gray950: hsl(0, 0%, 7%);
+
+    --spacing300: 24px;
+    --spacing150: 12px;
+    --spacing100: 8px;
+
+    font-family: 'Figtree-Medium';
+    font-size: 16px;
+    color: var(--gray950);
+
+    background-color: var(--yellow);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 384px;
+    height: 522px;
+    background-color: var(--white);
+    padding: 24px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 8px 8px 0px 0px black;
+
+    & img.banner {
+        border-radius: 10px;
+    }
+
+    & .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    & .author {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+}
+
+.content {
+    & .category {
+        width: fit-content;
+        background-color: var(--yellow);
+        padding: 4px 12px;
+        border-radius: 4px;
+    }
+
+    & p {
+        font-size: 16px;
+        color: var(--gray500);
+        line-height: 150%;
+        letter-spacing: 0%;
+    }
+}
+
+.author {
+    & img {
+        width: 32px;
+        height: 32px;
+    }
+}
