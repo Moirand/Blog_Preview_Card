@@ -23,6 +23,11 @@ h1 {
     font-family: 'Figtree-ExtraBold';
     line-height: 150%;
     letter-spacing: 0%;
+
+    &:hover {
+        cursor: pointer;
+        color: var(--yellow);
+    }
 }
 
 h2 {
