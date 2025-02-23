@@ -1,3 +1,6 @@
+# Preview
+[via Vercel](https://blog-preview-card-nine-lilac.vercel.app)
+
 # Frontend Mentor - Blog preview card
 
 ![Design preview for the Blog preview card coding challenge](./preview.jpg)
